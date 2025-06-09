@@ -6,7 +6,7 @@ This project was built as part of a technical assessment for a Senior Angular De
 
 ## 🚀 Live Demo
 
-🔗 [Live Demo](https://test-angular-8w795kr60-christian-ramirez-lopezs-projects.vercel.app)
+🔗 [Live Demo](https://test-angular-theta-topaz.vercel.app/)
 
 ---
 

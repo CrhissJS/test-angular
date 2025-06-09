@@ -1,0 +1,97 @@
+/* Colors */ 
+
+/* :root {
+  --header-bg: #f1f1f2;
+  --sidebar-bg: #f1f1f2;
+  --button-bg: #909090;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+} */
+
+.app-container {
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+.app-header {
+  background-color: #f1f1f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.app-logo h2 a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.app-logo h2 a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Button appearance */
+.app-auth a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ccc;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.app-auth a:hover {
+  background-color: #909090;
+}
+
+.app-body {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.app-sidebar {
+  width: 200px;
+  background-color: #f1f1f2;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+}
+
+.app-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-sidebar li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.app-sidebar ul li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #909090;
+}
+
+.app-sidebar li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.app-content {
+  flex: 1;
+  padding: 2rem;
+}

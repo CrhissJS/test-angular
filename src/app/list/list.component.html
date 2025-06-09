@@ -1,0 +1,26 @@
+<h2 class="user-list">User List</h2>
+
+<div class="search-container">
+  <input type="text" placeholder="Search by name..." [(ngModel)]="searchValue" (ngModelChange)="onSearch()" class="search">
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of filteredUsers">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.company.name }}</td>
+    </tr>
+  </tbody>
+</table>

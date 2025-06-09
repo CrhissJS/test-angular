@@ -1,59 +1,85 @@
-# TestAngular
+# TestAngular – Angular Technical Test
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
+This project was built as part of a technical assessment for a Senior Angular Developer role. It consumes a public API to display a user dashboard and includes a basic local authentication system using `localStorage`.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🧱 Technologies Used
+
+- Angular 19 (standalone components)
+- TypeScript
+- RxJS
+- HTML/CSS
+- LocalStorage API (no backend)
+
+---
+
+## 🚀 Key Features
+
+✅ Dashboard with user table fetched from `https://jsonplaceholder.typicode.com/users`  
+✅ Dynamic search by name  
+✅ Local user registration (with password)  
+✅ Login with validation using local storage  
+✅ Session control with dynamic Login / Logout button  
+✅ Header + Sidebar + Main Content layout  
+✅ Basic responsive design with custom styles
+
+---
+
+## 📂 Project Structure
+
+```
+src/app/
+├── auth/            # Auth module (login/register)
+├── list/       # User table
+├── services/        # Business logic (UserService)
+├── interfaces/      # User model typing
+├── assets/          # Logo SVG and static resources
+```
+
+---
+
+## 🧪 How to Run the Project
+
+### Requirements:
+
+- Node.js 18+
+- Angular CLI globally installed (`npm install -g @angular/cli`)
+
+### Instructions:
 
 ```bash
+git clone https://github.com/CrhissJS/test-angular.git
+cd test-angular
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser at: `http://localhost:4200/`
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠 Production Build
 
 ```bash
-ng generate --help
+ng build --configuration production
 ```
 
-## Building
+Compiled files will be in `dist/test-angular`.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🔐 About Authentication
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Initial users are loaded from the public API.
+- New users are saved locally via `localStorage`.
+- Logged-in user is stored as `authenticatedUser` in local storage.
+- Logout clears session and redirects to login.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📌 Final Notes
 
-```bash
-ng test
-```
+This project was built as part of a technical challenge. It can be easily extended with route guards, backend integration, and unit testing.
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
